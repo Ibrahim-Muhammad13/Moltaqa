@@ -9,7 +9,7 @@ use Faker\Generator as Faker;
 $factory->define(Properties::class, function (Faker $faker) {
     return [
         //
-        'location_id'=>1,
+        'location_id'=>factory(Location::class),
         'title'=>$faker->sentence,
         'adress'=>$faker->sentence,
         'image'=>$faker->imageUrl($width = 640, $height = 480),
