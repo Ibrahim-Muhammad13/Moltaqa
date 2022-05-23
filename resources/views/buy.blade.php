@@ -29,20 +29,6 @@
             </div>
             @endforeach
     
-    
-    
-    
-    
-    
-    
-           
-    
-    
-    
-    
-    
-    
-    
           </div>
         </div>
     

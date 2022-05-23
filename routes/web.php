@@ -37,3 +37,5 @@ Route::post('/add_location','LocationsController@store')->name('saveLocation');
 Route::get('/add_property', 'PropertyController@index')->name('addProperty');
 Route::post('/add_property','PropertyController@store')->name('saveProperty');
 
+Route::get('/search','SearchController@index')->name('search');
+Route::post('/search_result','SearchController@search')->name('result');
