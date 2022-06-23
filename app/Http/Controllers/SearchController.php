@@ -16,9 +16,7 @@ class SearchController extends Controller
     public function search(Request $request)
     {
         $locations = Location::all();
-          $city     = $request->location_id;
-        // $type     = $request->type;
-        // $purpose  = $request->purpose;
+        $city     = $request->location_id;
         $bedroom  = $request->rooms;
         $bathroom = $request->bath;
         if($request->minprice){
@@ -31,19 +29,14 @@ class SearchController extends Controller
         }else{
             $maxprice = 0;
         }
-       
-        
-         $type = $request->type;
+        $type = $request->type;
         $properties = Properties::where('bath',$bathroom)
         ->orwhere('rooms',$bedroom)
         ->orwhere('location_id',$city)
         ->orwhere('price','>=',$minprice)
         ->orwhere('price','<=',$maxprice)
         ->orwhere('type',$type)
-        ->get();   
-                      
-                        
-                        
+        ->get();                
         return view('search',['properties'=>$properties,'locations'=>$locations]);
     }
 

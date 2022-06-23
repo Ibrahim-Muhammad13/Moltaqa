@@ -85,7 +85,7 @@
                 </div>
                 <div class="content">
                     <div class="price">
-                        <h3>{{$property->price}}</h3>
+                        <h3>${{$property->price}}</h3>
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="fas fa-envelope"></a>
                         <a href="#" class="fas fa-phone"></a>

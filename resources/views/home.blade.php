@@ -68,7 +68,7 @@
                         <h2>Buy a home</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, optio unde impedit natus soluta error placeat culpa labore laudantium ex.
                         </p>
-                        <a class="btn btn-outline-success rounded-pill px-4" href="Buy.html">See More</a>
+                        <a class="btn btn-outline-success rounded-pill px-4" href="{{route('buy')}}">See More</a>
                       </div>
                 </div>
                 
@@ -84,7 +84,7 @@
                         <h2>Sell a home</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                           At illum excepturi ipsa impedit accusamus sunt dicta explicabo rem fuga quidem?</p>
-                        <a class="btn btn-outline-success rounded-pill px-4" href="sell.html">See More</a>
+                        <a class="btn btn-outline-success rounded-pill px-4" href="{{route('sell')}}">See More</a>
                       </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -92,10 +92,6 @@
                         <img src="imgs/sec3.jpeg" class="w-100" >
                    </div>
                 </div>
-                
-                
-
-
                 </div>
            </div></section>
            <section id="sec4">

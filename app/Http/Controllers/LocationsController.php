@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+// use Request;
 use Illuminate\Http\Request;
 use App\Location;
 use App\Properties;
@@ -10,11 +11,10 @@ use DB;
 class LocationsController extends Controller
 {
     //
-    public function index(){
+    public function index(Request $request){
         $locations = Location::withCount(['Properties'])->get();   
         // $count = Properties::where('location_id',1)->count(); 
-     return view('buy',['locations'=>$locations]);
-   
+            return view('buy',['locations'=>$locations]);
     }
     
 

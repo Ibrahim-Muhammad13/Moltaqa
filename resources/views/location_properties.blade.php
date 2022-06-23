@@ -22,14 +22,14 @@
             </div>
             <div class="content">
                 <div class="price">
-                    <h3>{{$property->price}}</h3>
+                    <h3>${{$property->price}}</h3>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-envelope"></a>
                     <a href="#" class="fas fa-phone"></a>
                 </div>
                 <div class="location">
                     <h3>{{$property->title}}</h3>
-                    <p>jogeshwari west, mumbai, india - 400104</p>
+                    <p>{{$property->adress}}</p>
                 </div>
                 <div class="details">
                     <h3> <i class="fas fa-expand"></i> {{$property->location->name}} </h3>

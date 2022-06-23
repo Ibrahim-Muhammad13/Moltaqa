@@ -29,9 +29,7 @@ class PropertyController extends Controller
             'status' =>'required',
             'rooms' =>'required',
             'bath' =>'required',
-            'image' => 'file',
-
-            
+            'image' => 'file', 
         ]);
         if($request->image){
             $inputs['image']=$request->image->store('images');
@@ -39,6 +37,6 @@ class PropertyController extends Controller
         Properties::create($inputs);
     
         return back()
-            ->with('success','You have successfully add property.');
+            ->with('success','You have successfully added property.');
     }
 }
